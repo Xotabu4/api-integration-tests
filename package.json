@@ -1,0 +1,17 @@
+{
+    "name": "api-tests",
+    "version": "1.0.0",
+    "devDependencies": {
+        "chai": "^3.5.0",
+        "chai-http": "^2.0.1",
+        "mocha": "^2.4.5",
+        "typescript": "2.2.2",
+        "@types/chai-http": "0.0.30",
+        "@types/chai": "3.5.1",
+        "@types/mocha": "2.2.41"
+    },
+    "scripts": {
+        "pretest": "tsc",
+        "test": "mocha"
+    }
+}
