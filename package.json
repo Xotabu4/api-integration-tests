@@ -5,13 +5,20 @@
         "chai": "^3.5.0",
         "chai-http": "^2.0.1",
         "mocha": "^2.4.5",
-        "typescript": "2.2.2",
+        "typescript": "2.4.2",
+        "osprey": "0.4.1",
+        "superagent-prefix": "0.0.2",
+        "superagent-bunyan": "5.1.0",
+        "bunyan": "1.8.10",
         "@types/chai-http": "0.0.30",
         "@types/chai": "3.5.1",
         "@types/mocha": "2.2.41"
     },
     "scripts": {
-        "pretest": "tsc",
-        "test": "mocha"
+        "osprey": "osprey -f ../raml-example/raml-tutorial-200/jukebox-api.raml -a http://127.0.0.1:3000 -p 3032",
+        "pretest": "npm run tsc",
+        "test": "mocha",
+        "tscw": "tsc -w",
+        "tsc": "tsc"
     }
 }
